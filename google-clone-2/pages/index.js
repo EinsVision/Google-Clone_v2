@@ -8,18 +8,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Header */}
-      <header className='flex bg-red-500 w-full p-5'>
+      {/* Header width full, padding 5px */}
+      <header className='flex w-full p-5 justify-between text-sm text-gray-700'>
         {/* Left */}
         <div className='flex space-x-4 items-center'>
-          <p>About</p>
-          <p>Store</p>
+          <p className='link'>About</p>
+          <p className='link'>Store</p>
         </div>
 
         {/* Right */}
         <div className='flex space-x-4 itmes-center'>
-          <p>Gmail</p>
-          <p>Images</p>
+          <p className='link'>Gmail</p>
+          <p className='link'>Images</p>
 
           {/* Icon */}
 
