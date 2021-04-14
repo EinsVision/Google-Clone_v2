@@ -4,6 +4,7 @@ function Avatar({ url }) {
       loading='lazy'
       src={url}
       alt='profile picture'
+      className='rounded-full'
     />
   )
 }
