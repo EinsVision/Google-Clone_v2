@@ -25,7 +25,7 @@ export default function Home() {
 
           {/* Icon */} 
           {/* https://github.com/tailwindlabs/heroicons */}
-          <ViewGridIcon className='h-10 w-10 p-2' />
+          <ViewGridIcon className='h-10 w-10 p-2 rounded-full hover:bg-gray-100'/>
 
           {/* Avatar */}
           <Avatar url='https://lh3.googleusercontent.com/ogw/ADGmqu9GElmcJVjw3GzbcE1wI1U9xhBf4fVroMKcCYsX=s192-c-mo'/>
