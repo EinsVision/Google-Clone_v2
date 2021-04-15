@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Avatar from '../components/Avatar';
 import { ViewGridIcon, MicrophoneIcon } from '@heroicons/react/solid';
+import { SearchIcon } from '@heroicons/react/outline';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -33,6 +35,18 @@ export default function Home() {
 
       </header>
       {/* Body */}
+      <form>
+        <Image
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          height={100}
+          width={300}
+        />
+        <div>
+          <SearchIcon className="h-5 ml-3 text-gray-600" />
+          <input type="text" className="bg-red-500 focus:outline-none"/>
+        </div>
+
+      </form>
 
       {/* Footer */}
 
