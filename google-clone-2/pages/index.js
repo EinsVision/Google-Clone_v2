@@ -22,7 +22,9 @@ export default function Home() {
           <p className='link'>Gmail</p>
           <p className='link'>Images</p>
 
-          {/* Icon */}
+          {/* Icon */} 
+          {/* https://github.com/tailwindlabs/heroicons */}
+          
 
           {/* Avatar */}
           <Avatar url='https://lh3.googleusercontent.com/ogw/ADGmqu9GElmcJVjw3GzbcE1wI1U9xhBf4fVroMKcCYsX=s192-c-mo'/>
