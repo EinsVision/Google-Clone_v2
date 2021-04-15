@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import Avatar from '../components/Avatar'
+import Head from 'next/head';
+import Avatar from '../components/Avatar';
+import { ViewGridIcon, MicrophoneIcon } from '@heroicons/react/solid';
 
 export default function Home() {
   return (
@@ -18,13 +19,13 @@ export default function Home() {
         </div>
 
         {/* Right */}
-        <div className='flex space-x-4 itmes-center'>
+        <div className='flex space-x-4 items-center'>
           <p className='link'>Gmail</p>
           <p className='link'>Images</p>
 
           {/* Icon */} 
           {/* https://github.com/tailwindlabs/heroicons */}
-          
+          <ViewGridIcon className='h-10 w-10 p-2' />
 
           {/* Avatar */}
           <Avatar url='https://lh3.googleusercontent.com/ogw/ADGmqu9GElmcJVjw3GzbcE1wI1U9xhBf4fVroMKcCYsX=s192-c-mo'/>
