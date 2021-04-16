@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from '../components/Header';
 
 function Search() {
   return (
@@ -9,7 +10,7 @@ function Search() {
       </Head>
 
       {/* Header */}
-      <h1>Search Page</h1>
+      <Header />
       {/* Search Results */}
 
     </div>
