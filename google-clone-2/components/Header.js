@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { useRef } from 'react';
 
 function Header() {
 
   const router = useRouter();
+  const searchInputRef = useRef(null);
 
   return (
     <header>
@@ -14,6 +16,9 @@ function Header() {
         onClick={ () => router.push('/')}
         className='cursor-pointer'
       />
+      <form>
+        <input ref={searchInputRef} type="text"/>
+      </form>
     </header>
   )
 }
