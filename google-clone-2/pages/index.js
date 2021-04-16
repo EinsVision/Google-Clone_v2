@@ -5,14 +5,19 @@ import { SearchIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 import { useRef } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Home() {
-
+  const router = useRouter();
   const searchInputRef = useRef(null); // ref는 DOM에 직접 접근해야할 때 사용된다. 
 
   const search = (e) => {
     e.preventDefault();
     const term = searchInputRef.current.value;
+
+    if(!term) return;
+
+    router.push(`/search?term=${term}`);
   };
 
   return (
