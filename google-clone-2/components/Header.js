@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { XIcon } from '@heroicons/react/outline';
 import { MicrophoneIcon, SearchIcon } from '@heroicons/react/solid';
 import Avatar from './Avatar';
+import HeaderOptions from './HeaderOptions';
 
 function Header() {
 
@@ -48,6 +49,9 @@ function Header() {
         </form>
         <Avatar className='ml-auto' url='https://lh3.googleusercontent.com/ogw/ADGmqu9GElmcJVjw3GzbcE1wI1U9xhBf4fVroMKcCYsX=s192-c-mo' />
       </div>
+
+      {/* Header Options  */}
+      <HeaderOptions />
       
     </header>
   )
